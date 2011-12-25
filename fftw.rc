@@ -4,3 +4,4 @@
        uuid = "deddc100-2ed9-11e1-9b99-50e54950d806")];
 #[desc = "FFTW bindings for Rust"];
 #[license = "GPLv3"];
+#[crate_type = "lib"];
