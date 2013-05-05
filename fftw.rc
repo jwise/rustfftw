@@ -1,7 +1,0 @@
-#[link(name = "fftw",
-       vers = "0.1",
-       url = "https://www.github.com/jwise/rustfftw/",
-       uuid = "deddc100-2ed9-11e1-9b99-50e54950d806")];
-#[desc = "FFTW bindings for Rust"];
-#[license = "GPLv3"];
-#[crate_type = "lib"];
