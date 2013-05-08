@@ -20,8 +20,8 @@ fn approx_c64(a: Complex64, b: Complex64) -> bool {
 #[test]
 fn basic() {
 
-    let in = unsafe { fftw::malloc_cpx64(16) };
-    let out = unsafe { fftw::malloc_cpx64(16) };
+    let in = fftw::malloc_cpx64(16);
+    let out = fftw::malloc_cpx64(16);
 
     let p = fftw::Plan::dft_1d(16, in, out, fftw::FORWARD, fftw::MEASURE);
 

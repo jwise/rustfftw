@@ -46,7 +46,7 @@ mod native {
 }
 
 pub fn malloc_cpx64(n: u32) -> c_vec::CVec<Complex64> {
-    let mem = native::fftw_malloc(n * (sys::size_of::<Complex64>() as u32));
+    let mem = unsafe { native::fftw_malloc(n * (sys::size_of::<Complex64>() as u32)) };
 
     assert!(mem.is_not_null());
 
